@@ -24,6 +24,7 @@ exports.mute = async (req, res) => {
   const status = await denon.command('MU?');
   await status === 'MUON\r'
     ? denon.command('MUOFF')
-    : denon.command('MUON');
-  res.end();
+      .then(() => res.json({ mute: false }))
+    : denon.command('MUON')
+      .then(() => res.json({ mute: true }));
 };
