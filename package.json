@@ -1,0 +1,27 @@
+{
+  "name": "restful-denon",
+  "version": "1.0.0",
+  "description": "An express based api for controlling a Denon receiver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "denon",
+    "automation",
+    "home",
+    "theater",
+    "receiver"
+  ],
+  "author": "David Sally",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0"
+  }
+}
